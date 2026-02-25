@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="menu">
+            <h1 class="menu_title">
+                Мои заметки
+            </h1>
+
+            <button class="menu_button">
+                Новая заметка
+            </button>
+
+            <h2 class="tegs">Теги</h2>
+            <div class="tegs_li">Все</div>
+            <div class="tegs_li">Идеи</div>
+            <div class="tegs_li">Личное</div>
+            <div class="tegs_li">Работа</div>
+            <div class="tegs_li">Список покупок</div>
+        </div>
+
+        <div class="content">
+
+            <div class="search">
+                <input type="text" class="forma_input" placeholder="поиск">
+                <button class="search_button"></button>
+            </div>
+
+            <div class="zadachi">
+                <div class="zadachi_item">
+                    <div class="zadachi_item-top">
+                        <span>Сдать</span>
+                        <span>отчёт</span>
+                    </div>
+                    <div class="zadachi_item-down">
+                        <span>23 июля 2024</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="zadachi">
+                <div class="zadachi_item">
+                    <div class="zadachi_item-top">
+                        <span>Сдать</span>
+                        <span>отчёт</span>
+                    </div>
+                    <div class="zadachi_item-down">
+                        <span>23 июля 2024</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<div id="overlay" class="overlay">
+    <div class="modal">
+        <h2>Заметка</h2>
+
+        <form id="ModalForm">
+            <input id="ModalTitle" type="text" class="modal_input" placeholder="Название">
+
+            <select id="ModalSelect" class="modal_select">
+                <option value="Все">Все</option>
+                <option value="Идеи">Идеи</option>
+                <option value="Личное">Личное</option>
+                <option value="Работа">Работа</option>
+                <option value="Список покупок">Список покупок</option>
+            </select>
+
+            <div class="modal_btns">
+                <button id="ModalButtonSave" class="modal_save">Сохранить</button>
+                <button id="btnModalClose" class="modal_close">Закрыть</button>
+                <button id="ModalButtonDelete" class="modal_delete" style="display:none;">Удалить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
